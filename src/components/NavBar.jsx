@@ -6,10 +6,10 @@ export default function NavBar() {
       <Link className="button" href="/">
         Home
       </Link>
-      <Link className="button" href="/games?category=All">
+      <Link className="button" href="/posts">
         Posts
       </Link>
-      <Link className="button" href="/addGame">
+      <Link className="button" href="/about">
         About
       </Link>
     </nav>
