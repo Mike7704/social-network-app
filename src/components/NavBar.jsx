@@ -9,8 +9,8 @@ export default function NavBar() {
       <Link className="button" href="/posts">
         Posts
       </Link>
-      <Link className="button" href="/about">
-        About
+      <Link className="button" href="/profile">
+        Profile
       </Link>
     </nav>
   );

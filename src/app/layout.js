@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={rubik.className} suppressHydrationWarning={true}>
           <BackgroundOverlay />
-          <UserButton />
+          <UserButton afterSignOutUrl="/" />
           <Header />
           <NavBar />
           {children}

@@ -1,0 +1,31 @@
+.PopoverTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #28027390;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 120px;
+  padding: 5px 20px 5px 20px;
+}
+.PopoverTrigger:hover {
+  background-color: #31038daa;
+}
+
+.PopoverContent {
+  border-radius: 8px;
+  padding: 20px;
+  width: 260px;
+  color: white;
+  background-color: #28027390;
+  border: 2px solid white;
+}
+
+.PopoverArrow {
+  fill: white;
+}

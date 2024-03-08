@@ -89,18 +89,17 @@ p {
 }
 
 .button {
-  background-color: #270273;
+  background-color: #28027390;
   border: 2px solid white;
   border-radius: 8px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  min-width: 120px;
+  min-width: 140px;
   padding: 5px 20px 5px 20px;
 }
 
 .button:hover {
-  background-color: #31038d;
+  background-color: #31038daa;
 }
