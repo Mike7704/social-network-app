@@ -84,6 +84,16 @@ h2 {
   padding: 20px;
 }
 
+h3,
+label {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-align: center;
+}
+
 p {
   font-size: 18px;
 }
@@ -102,4 +112,14 @@ p {
 
 .button:hover {
   background-color: #31038daa;
+}
+
+input,
+textarea {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 18px;
+  color: black;
+  padding: 5px 8px 5px 8px;
 }

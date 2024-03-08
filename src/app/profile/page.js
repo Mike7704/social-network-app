@@ -1,11 +1,14 @@
 import AnimateIn from "@/components/AnimateIn";
+import ProfileCompletedCheck from "@/components/ProfileCompletedCheck";
 
 export default function Profile() {
   return (
-    <main className="page-content-container text-center">
-      <AnimateIn>
-        <h2>Profile</h2>
-      </AnimateIn>
-    </main>
+    <ProfileCompletedCheck>
+      <main className="page-content-container text-center">
+        <AnimateIn>
+          <h2>Profile</h2>
+        </AnimateIn>
+      </main>
+    </ProfileCompletedCheck>
   );
 }

@@ -1,11 +1,16 @@
+import { currentUser } from "@clerk/nextjs";
+import { redirect } from "next/navigation";
 import AnimateIn from "@/components/AnimateIn";
+import ProfileCompletedCheck from "@/components/ProfileCompletedCheck";
 
-export default function Posts() {
+export default async function Posts() {
   return (
-    <main className="page-content-container text-center">
-      <AnimateIn>
-        <h2>Posts</h2>
-      </AnimateIn>
-    </main>
+    <ProfileCompletedCheck>
+      <main className="page-content-container text-center">
+        <AnimateIn>
+          <h2>Posts</h2>
+        </AnimateIn>
+      </main>
+    </ProfileCompletedCheck>
   );
 }
