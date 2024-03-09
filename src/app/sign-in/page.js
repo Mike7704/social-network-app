@@ -53,15 +53,15 @@ export default async function SignIn() {
     setProfileCompleted(user.id);
 
     // Revalidate the profile page to fetch most recent data
-    revalidatePath(`/sign-in`);
+    revalidatePath(`/profile`);
 
     // Redirect the user to the home page
     redirect(`/`);
   }
 
   return (
-    <main className="page-content-container text-center">
-      <AnimateIn>
+    <AnimateIn>
+      <main className="page-content-container">
         <h2>Welcome to the Hub, {user?.username}</h2>
         <p>Finish setting up your profile below.</p>
 
@@ -78,7 +78,7 @@ export default async function SignIn() {
 
           <FormSubmitButton />
         </form>
-      </AnimateIn>
-    </main>
+      </main>
+    </AnimateIn>
   );
 }

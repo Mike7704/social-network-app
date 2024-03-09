@@ -8,8 +8,8 @@ export default async function Home() {
 
   return (
     <ProfileCompletedCheck>
-      <main className="page-content-container text-center">
-        <AnimateIn>
+      <AnimateIn>
+        <main className="page-content-container">
           {user ? (
             <>
               <h2>Welcome to the Hub, {user?.username}</h2>
@@ -29,8 +29,8 @@ export default async function Home() {
               </div>
             </>
           )}
-        </AnimateIn>
-      </main>
+        </main>
+      </AnimateIn>
     </ProfileCompletedCheck>
   );
 }

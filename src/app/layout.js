@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <UserButton afterSignOutUrl="/" />
           <Header />
           <NavBar />
-          {children}
+          <div className="flex-1">{children}</div>
           <Footer />
         </body>
       </html>

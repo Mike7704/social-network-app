@@ -6,11 +6,11 @@ import ProfileCompletedCheck from "@/components/ProfileCompletedCheck";
 export default async function Posts() {
   return (
     <ProfileCompletedCheck>
-      <main className="page-content-container text-center">
-        <AnimateIn>
+      <AnimateIn>
+        <main className="page-content-container">
           <h2>Posts</h2>
-        </AnimateIn>
-      </main>
+        </main>
+      </AnimateIn>
     </ProfileCompletedCheck>
   );
 }
