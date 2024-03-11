@@ -1,6 +1,7 @@
 import { currentUser } from "@clerk/nextjs";
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
+import Link from "next/link";
 import AnimateIn from "@/components/AnimateIn";
 import ProfileCompletedCheck from "@/components/ProfileCompletedCheck";
 import LikePostButton from "@/components/LikePostButton";
@@ -66,7 +67,10 @@ export default async function Posts() {
               <div className={postStyles.post_container} key={post.postid}>
                 <li className={postStyles.post_content}>{post.postcomment}</li>
                 <div className={postStyles.post_info}>
-                  <li>Posted By: {post.username}</li>
+                  <Link className="underline" href={`/profile/${post.userid}`}>
+                    Posted By: {post.username}
+                  </Link>
+
                   <li>Date: {post.createdat.toLocaleString("en-GB")}</li>
                 </div>
                 <div className={postStyles.post_buttons_container}>
