@@ -33,7 +33,6 @@ export default async function Posts() {
       Likes_SH ON Posts_SH.PostID = Likes_SH.PostID
     GROUP BY 
       Posts_SH.PostID,
-      Posts_SH.PostID,
       Posts_SH.Comment,
       Posts_SH.CreatedAt,
       Users_SH.UserID,
@@ -65,12 +64,14 @@ export default async function Posts() {
           <ul className={postStyles.posts_container}>
             {posts.rows.map((post) => (
               <div className={postStyles.post_container} key={post.postid}>
-                <li>Posted By: {post.username}</li>
-                <li>Comment: {post.postcomment}</li>
-                <li>Posted: {post.createdat.toLocaleString("en-GB")}</li>
+                <li className={postStyles.post_content}>{post.postcomment}</li>
+                <div className={postStyles.post_info}>
+                  <li>Posted By: {post.username}</li>
+                  <li>Date: {post.createdat.toLocaleString("en-GB")}</li>
+                </div>
                 <div className={postStyles.post_buttons_container}>
                   <LikePostButton userID={user.id} postID={post.postid} likeCount={post.likes} />
-                  <DeletePostButton postID={post.postid} />
+                  <DeletePostButton userID={user.id} postID={post.postid} />
                 </div>
               </div>
             ))}

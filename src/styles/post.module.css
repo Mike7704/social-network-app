@@ -22,6 +22,14 @@
   gap: 12px;
 }
 
+.post_content {
+  font-size: 22px;
+}
+
+.post_info {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .post_buttons_container {
   display: flex;
   gap: 20px;
